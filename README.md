@@ -1,1 +1,1 @@
-Lec0 : [Video (Why Do We Study Data Structures and Algorithms?)]("https://youtu.be/rcU8Z0znm20")
+Lec0 : [Why Do We Study Data Structures and Algorithms?](https://youtu.be/rcU8Z0znm20)
