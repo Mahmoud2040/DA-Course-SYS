@@ -1,4 +1,6 @@
 package lecture0;
+import java.math.BigInteger;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class SearchFoItem {
@@ -24,14 +26,18 @@ public class SearchFoItem {
     }
 
     private static void initArrayValues() {   
-        numbers =  new int[1000];
+        numbers =  new int[2_100_000_000];
         for (int i = 0; i < numbers.length; i++) 
          numbers[i] = i + 1;
     }
     public static boolean isFound(int number) {
-
+              for (int i = 0 ; i<= numbers.length ; i++)
+                  if(numbers[i]==number){
+                      System.out.println("found at " + i );
+                      return true;
+                  }
         // TODO-lec0 write your algorithm here
-
+        System.out.println("not found");
         return false;
     }
 }
