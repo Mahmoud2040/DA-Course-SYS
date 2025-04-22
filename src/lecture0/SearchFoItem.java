@@ -1,5 +1,8 @@
 package lecture0;
 import java.math.BigInteger;
+import java.time.Duration;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -15,29 +18,69 @@ public class SearchFoItem {
 
     private static void searchForNumber() {
         int input = getInputFromUser();
-        boolean isFound = isFound(input);
-        System.out.println(input + " isFound = " + isFound);
+//binarySearch
+        LocalTime beforeSearchB = LocalTime.now();
+        boolean isFoundB = isFoundBinarySearch(input);
+        LocalTime afterSearchB = LocalTime.now();
+
+        System.out.println(input + " isFoundBinarySearch = " + isFoundB + " Time taken : " + Duration.between(beforeSearchB,afterSearchB));
+
+
+//Simple search
+        LocalTime beforeSearch = LocalTime.now();
+        boolean isFound = isFoundSimpleSearch(input);
+        LocalTime afterSearch = LocalTime.now();
+
+        System.out.println(input + " isFoundSimpleSearch = " + isFound + " Time taken : " + Duration.between(beforeSearch,afterSearch));
+
+
     }
 
     private static int getInputFromUser() {
         scanner = new Scanner(System.in);
-        System.out.println("please enter number between 1 and 1000");
+        System.out.println("please enter number between 1 and " +numbers.length );
         return scanner.nextInt();
     }
 
     private static void initArrayValues() {   
-        numbers =  new int[2_100_000_000];
+        numbers =  new int[10];
+        System.out.println("insertion start ... ");
         for (int i = 0; i < numbers.length; i++) 
          numbers[i] = i + 1;
+        System.out.println("insertion Ended");
     }
-    public static boolean isFound(int number) {
-              for (int i = 0 ; i<= numbers.length ; i++)
-                  if(numbers[i]==number){
-                      System.out.println("found at " + i );
-                      return true;
-                  }
-        // TODO-lec0 write your algorithm here
-        System.out.println("not found");
+    public static boolean isFoundSimpleSearch(int number) {
+
+        for (int i = 0 ; i < numbers.length ; i++)
+        {
+            if (numbers[i] == number)
+            {
+                System.out.println("found at : " + i );
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    public static boolean isFoundBinarySearch (int number){
+
+        int low = 0 ;
+        int high = numbers.length-1;
+        int mid;
+
+        while (low<=high){
+        mid =  low+ (high-low) /2;
+        if (number > numbers[mid])
+            low = mid+1 ;
+        else if (number < numbers[mid])
+            high = mid-1;
+        else {
+            System.out.println("found at : " + mid );
+            return true;
+        }
+        }
+
         return false;
     }
 }
