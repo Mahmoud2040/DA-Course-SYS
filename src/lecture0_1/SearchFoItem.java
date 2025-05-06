@@ -1,9 +1,6 @@
-package lecture0;
-import java.math.BigInteger;
+package lecture0_1;
 import java.time.Duration;
-import java.time.LocalDateTime;
 import java.time.LocalTime;
-import java.util.Locale;
 import java.util.Scanner;
 
 public class SearchFoItem {
@@ -15,6 +12,15 @@ public class SearchFoItem {
         initArrayValues();
         searchForNumber();
     }
+    public static void printMainDiagonal(int[][] matrix) {
+        System.out.println("Main Diagonal:");
+        int n = Math.min(matrix.length, matrix[0].length);
+        for (int i = 0; i < n; i++) {
+            System.out.print(matrix[i][i] + " ");
+        }
+        System.out.println();
+    }
+
 
     private static void searchForNumber() {
         int input = getInputFromUser();
