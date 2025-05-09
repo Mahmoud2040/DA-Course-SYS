@@ -6,3 +6,5 @@ Lec0 : [Why Do We Study Data Structures and Algorithms?](https://youtu.be/rcU8Z0
 Lec1 : [Algorithms + Binary Search + Big O Notation](https://youtu.be/tNHrntIT4ug) | =>---- [Visualization](https://www.cs.usfca.edu/~galles/visualization/Search.html)
 
 Lec2 : [1D Array](https://youtu.be/hwc0SQGphHU)
+
+Lec3 : [2D Array](https://youtu.be/4j_E-2OHPCw)
