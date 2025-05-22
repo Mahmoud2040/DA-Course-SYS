@@ -1,6 +1,4 @@
-package lecture2;
-
-import java.util.ArrayList;
+package lecture2_3_4_Arrays;
 
 public class Arrays {
   // TODO

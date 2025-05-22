@@ -7,10 +7,33 @@ public class SearchFoItem {
     static int[] numbers;
     static Scanner scanner;
 
+    public static void thread1(){
+        for (int i = 0 ;i<=100000 ; i++){
+            Thread thread = new Thread(() -> {
+                System.out.println("Running in platform thread");
+                thread2();
+            });
+            thread.start();
+    }
+
+    }
+    public static void thread2(){
+        for (int i = 0 ;i<=100000 ; i++){
+            Thread thread = new Thread(() -> {
+                System.out.println("Running in platform thread");
+            });
+            thread.start();
+        }
+
+    }
     public static void main(String[] args) {
-        
-        initArrayValues();
-        searchForNumber();
+
+thread1();
+
+
+
+   /*     initArrayValues();
+        searchForNumber();*/
     }
     public static void printMainDiagonal(int[][] matrix) {
         System.out.println("Main Diagonal:");

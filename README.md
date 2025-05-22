@@ -10,3 +10,5 @@ Lec2 : [1D Array](https://youtu.be/hwc0SQGphHU)
 Lec3 : [2D Array](https://youtu.be/4j_E-2OHPCw)
 
 Lec4 : [ArrayList](https://youtu.be/tm3OquECcn0)
+
+Lec5 : [Strings Part1 ](https://youtu.be/mUonzzCsO9k)
