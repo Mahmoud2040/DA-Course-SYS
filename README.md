@@ -12,3 +12,5 @@ Lec3 : [2D Array](https://youtu.be/4j_E-2OHPCw)
 Lec4 : [ArrayList](https://youtu.be/tm3OquECcn0)
 
 Lec5 : [Strings Part1 ](https://youtu.be/mUonzzCsO9k)
+
+Lec6 : [StringBuilder - StringBuffer](https://youtu.be/4hfpm584PQU)

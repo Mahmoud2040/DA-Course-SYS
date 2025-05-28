@@ -1,34 +1,42 @@
 package lecture0_1;
 import java.time.Duration;
 import java.time.LocalTime;
+import java.util.LinkedList;
 import java.util.Scanner;
 
 public class SearchFoItem {
     static int[] numbers;
     static Scanner scanner;
-
+    static StringBuilder builder = new StringBuilder("f");
     public static void thread1(){
-        for (int i = 0 ;i<=100000 ; i++){
+
             Thread thread = new Thread(() -> {
-                System.out.println("Running in platform thread");
-                thread2();
+
+                for (int i = 0 ;i<=5000 ; i++){
+                    builder.append(i+".");
+                }
+                System.out.println( "thread1 " + builder.toString());
+
             });
             thread.start();
     }
 
-    }
+
     public static void thread2(){
-        for (int i = 0 ;i<=100000 ; i++){
             Thread thread = new Thread(() -> {
-                System.out.println("Running in platform thread");
+                for (int i = 50 ;i<=10000 ; i++){
+                    builder.append(i +".");
+                }
+                System.out.println( "thread2 " + builder.toString());
             });
             thread.start();
-        }
+
 
     }
     public static void main(String[] args) {
 
 thread1();
+thread2();
 
 
 
