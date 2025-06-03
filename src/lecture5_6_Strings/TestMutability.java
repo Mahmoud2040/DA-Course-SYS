@@ -1,4 +1,4 @@
-package lecture5_Strings;
+package lecture5_6_Strings;
 
 public class TestMutability {
 

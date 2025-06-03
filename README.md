@@ -14,3 +14,6 @@ Lec4 : [ArrayList](https://youtu.be/tm3OquECcn0)
 Lec5 : [Strings Part1 ](https://youtu.be/mUonzzCsO9k)
 
 Lec6 : [StringBuilder - StringBuffer](https://youtu.be/4hfpm584PQU)
+
+
+Lec7 : [LinkedList](https://youtu.be/7G4_XcprPGk)
