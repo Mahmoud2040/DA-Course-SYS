@@ -19,3 +19,5 @@ Lec6 : [StringBuilder - StringBuffer](https://youtu.be/4hfpm584PQU)
 Lec7 : [LinkedList](https://youtu.be/7G4_XcprPGk)
 
 Lec8 : [LinkedList problem solving ](https://youtu.be/PrQhoJgvhFU) |  =>---- [LL problem Set](https://leetcode.com/problem-list/n3amt7ss)
+
+Lec9 : [Stack](https://youtu.be/Qqi9au9rFsQ)
