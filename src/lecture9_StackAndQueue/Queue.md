@@ -180,3 +180,4 @@ queue.peek();
 | Removal      | Top              | Front                 |
 | Use Cases    | Undo, recursion  | Scheduling, messaging |
 | Java Support | `Stack`, `Deque` | `Queue`, `Deque`      |
+                                                   

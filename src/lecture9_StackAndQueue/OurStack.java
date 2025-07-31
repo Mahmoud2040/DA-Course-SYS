@@ -49,7 +49,7 @@ public class OurStack {
                 '}';
     }
 
-    private class StackNode {
+    private static class StackNode {
         int val ;
         StackNode next;
         StackNode (int val){

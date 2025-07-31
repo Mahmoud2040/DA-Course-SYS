@@ -21,3 +21,4 @@ Lec7 : [LinkedList](https://youtu.be/7G4_XcprPGk)
 Lec8 : [LinkedList problem solving ](https://youtu.be/PrQhoJgvhFU) |  =>---- [LL problem Set](https://leetcode.com/problem-list/n3amt7ss)
 
 Lec9 : [Stack](https://youtu.be/Qqi9au9rFsQ)
+Lec9.2 : [Queue](https://youtu.be/wg-2IbBm_ks)

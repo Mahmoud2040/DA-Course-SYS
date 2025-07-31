@@ -5,36 +5,37 @@ public class MainTest {
 
     public static void main (String []args ){
 
-        OurStack stack = new OurStack(3);
-        System.out.println(stack);
-        stack.push(3);
-        stack.push(12);
-        stack.push(25);
-        stack.push(7);
-        stack.push(9);
+        OurQueue queue = new OurQueue(3);
 
-        System.out.println(stack);
+        System.out.println(queue);
+        queue.enqueue(3);
+        queue.enqueue(12);
+        queue.enqueue(25);
+        queue.enqueue(7);
+        queue.enqueue(9);
 
-        System.out.println("Test peek " + stack.peek());
-        System.out.println("Test size " + stack.size());
-        System.out.println("Test is Empty " + stack.isEmpty());
+        System.out.println(queue);
 
-        stack.pop();
-        stack.pop();
-        stack.pop();
-        stack.pop();
+        System.out.println("Test peek " + queue.peek());
+        System.out.println("Test size " + queue.size());
+        System.out.println("Test is Empty " + queue.isEmpty());
 
-        System.out.println(stack);
+        queue.dequeue();
+        queue.dequeue();
+        queue.dequeue();
+        queue.dequeue();
 
-        System.out.println("Test peek " + stack.peek());
-        System.out.println("Test size " + stack.size());
-        System.out.println("Test is Empty " + stack.isEmpty());
+        System.out.println(queue);
 
-        stack.pop();
-        stack.pop();
+        System.out.println("Test peek " + queue.peek());
+        System.out.println("Test size " + queue.size());
+        System.out.println("Test is Empty " + queue.isEmpty());
+
+        queue.dequeue();
+        queue.dequeue();
 
         try {
-            stack.pop();
+            queue.dequeue();
         }catch (IllegalStateException e){
             System.out.println("error happned " + e.getLocalizedMessage());
         }
