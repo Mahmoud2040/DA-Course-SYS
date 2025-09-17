@@ -1,5 +1,7 @@
 package lecture9_StackAndQueue;
 
+import java.util.*;
+
 public class MainTest {
 
 
@@ -7,7 +9,17 @@ public class MainTest {
 
         OurQueue queue = new OurQueue(3);
 
-        System.out.println(queue);
+        String s = "Ali";
+        String w = "Ali";
+        System.out.println("BAlice".hashCode());
+        System.out.println("Alice".hashCode());
+
+
+
+        System.out.println(s.hashCode());
+
+
+      /*  System.out.println(queue);
         queue.enqueue(3);
         queue.enqueue(12);
         queue.enqueue(25);
@@ -38,7 +50,7 @@ public class MainTest {
             queue.dequeue();
         }catch (IllegalStateException e){
             System.out.println("error happned " + e.getLocalizedMessage());
-        }
+        }*/
 
 
     }

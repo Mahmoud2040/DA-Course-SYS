@@ -23,3 +23,5 @@ Lec8 : [LinkedList problem solving ](https://youtu.be/PrQhoJgvhFU) |  =>---- [LL
 Lec9 : [Stack](https://youtu.be/Qqi9au9rFsQ)
 
 Lec9.2 : [Queue](https://youtu.be/wg-2IbBm_ks)
+
+Lec10 : [Hashing](https://youtu.be/_iVWct6Mgwg)
